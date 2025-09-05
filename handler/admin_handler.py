@@ -6,6 +6,6 @@ from aiogram.fsm.state import StatesGroup,State
 
 admin_router=Router()
 
-admin_router.message(CommandStart())
+@admin_router.message(CommandStart())
 async def start_handler(message:Message):
     await message.answer("Salom botga xush kelibsiz")
